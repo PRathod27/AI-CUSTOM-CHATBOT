@@ -1,13 +1,13 @@
 "use client"
 import React, { useEffect, useState } from "react";
-import { signOut, onAuthStateChanged } from "firebase/auth";
+import { signOut, onAuthStateChanged, User } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import Assistant from "../Assistant";
 import { auth } from "../config"; 
 
 function Dashboard() {
     const router = useRouter();
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState<User | null>(null);
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -42,7 +42,7 @@ function Dashboard() {
                             Logout
                         </button>
                     </div>
-                </div>
+                </div>  
             </nav>
             <main className="flex-1 flex flex-col bg-gray-100 overflow-y-auto">
                 <div className="flex-1 p-8 rounded-lg shadow-md bg-white w-full">
