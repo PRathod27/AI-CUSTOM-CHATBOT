@@ -9,13 +9,13 @@ import "firebase/auth"
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: process.env.apiKey,
-  authDomain: process.env.authDomain,
-  projectId: process.env.projectId,
-  storageBucket: process.env.storageBucket,
-  messagingSenderId: process.env.messagingSenderId,
-  appId: process.env.appId,
-  measurementId: process.env.measurementId
+  apiKey: "AIzaSyDHJzHDLnVNLulZTVEc13DaV8n6sg9caxc",
+  authDomain: "ai-chat-support.firebaseapp.com",
+  projectId: "ai-chat-support",
+  storageBucket: "ai-chat-support.appspot.com",
+  messagingSenderId: "4980515246",
+  appId: "1:4980515246:web:e8365210a16cb3b368e83f",
+  measurementId: "G-2W0873ET06"
 };
 
 // Initialize Firebase
