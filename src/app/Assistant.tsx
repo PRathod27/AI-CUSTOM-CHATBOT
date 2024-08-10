@@ -10,11 +10,11 @@ const Assistant = () => {
   >([]);
   const [input, setInput] = useState("");
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInput(e.target.value);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input) return;
 
@@ -47,12 +47,7 @@ const Assistant = () => {
     setInput("");
   };
 
-  const handleKeyPress = (event) => {
-    if (event.key === 'Enter' && !event.shiftKey) {
-      event.preventDefault()
-      handleSubmit(event) // Pass the event object as an argument
-    }
-  }
+
 
   return (
     <main className="h-100% w-full flex flex-col bg-muted">
@@ -87,7 +82,6 @@ const Assistant = () => {
             placeholder="Say something"
             value={input}
             onChange={handleInputChange}
-            onKeyPress={handleKeyPress}
           />
           <Button
             type="submit"
