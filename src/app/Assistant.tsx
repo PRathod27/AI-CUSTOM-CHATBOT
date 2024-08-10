@@ -14,7 +14,7 @@ const Assistant = () => {
     setInput(e.target.value);
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     e.preventDefault();
     if (!input) return;
 
