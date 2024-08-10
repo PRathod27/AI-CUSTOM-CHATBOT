@@ -10,11 +10,11 @@ const Assistant = () => {
   >([]);
   const [input, setInput] = useState("");
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInput(e.target.value);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     e.preventDefault();
     if (!input) return;
 
