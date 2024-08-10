@@ -14,7 +14,7 @@
 /out/
 
 .env
-config.js
+# config.js
 
 # production
 /build

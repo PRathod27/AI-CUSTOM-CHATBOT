@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { signOut, onAuthStateChanged } from "firebase/auth";
 import { useRouter } from "next/navigation";
 import Assistant from "../Assistant";
-import { auth } from "../config.js"; 
+import { auth } from "../config"; 
 
 function Dashboard() {
     const router = useRouter();
