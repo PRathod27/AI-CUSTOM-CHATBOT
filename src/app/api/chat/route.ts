@@ -47,7 +47,7 @@ const generationConfig = {
     {
       role: "model",
       parts: [
-        {text: "Web development is the process of creating and maintaining websites. It encompasses various aspects, including:\n\n* **Front-end development:** Building the user interface (UI) that users interact with, using languages like HTML, CSS, and JavaScript.\n* **Back-end development:**  Creating the server-side logic that powers the website, using languages like Python, Ruby, PHP, or Node.js.\n* **Database management:** Storing and retrieving data from databases using technologies like SQL or NoSQL.\n* **Testing and deployment:** Ensuring the website functions correctly and making it accessible to users.\n\nThere are many different paths you can take in web development, depending on your interests and goals. 😄 \n"},
+        {tex: "Web development is the process of creating and maintaining websites. It encompasses various aspects, including:\n\n **Front-end development:** Building the user interface (UI) that users interact with, using languages like HTML, CSS, and JavaScript.\n* **Back-end development:**  Creating the server-side logic that powers the website, using languages like Python, Ruby, PHP, or Node.js.\n* **Database management:** Storing and retrieving data from databases using technologies like SQL or NoSQL.\n* **Testing and deployment:** Ensuring the website functions correctly and making it accessible to users.\n\nThere are many different paths you can take in web development, depending on your interests and goals. 😄 \n"},
       ],
     },
     {
@@ -97,7 +97,7 @@ const generationConfig = {
       parts: [
         {text: "I'm \"Web Dev Assistant\"! 😊  I'm here to help you with all things web development. \n"},
       ],
-    },
+    },  
   ],
 };
 

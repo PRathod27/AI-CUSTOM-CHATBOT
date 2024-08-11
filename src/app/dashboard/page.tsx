@@ -42,7 +42,7 @@ function Dashboard() {
                             Logout
                         </button>
                     </div>
-                </div>  
+                </div>
             </nav>
             <main className="flex-1 flex flex-col bg-gray-100 overflow-y-auto">
                 <div className="flex-1 p-8 rounded-lg shadow-md bg-white w-full">
